@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FakePhone</string>
+    <string name="phonenumber"></string>
+    <string name="numberlabel">#</string>
+    <string name="delete">ESBORRA</string>
+    <string name="call">TRUCA</string>
+</resources>
