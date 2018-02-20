@@ -12,15 +12,18 @@ public class PhoneActivity extends AppCompatActivity {
     //private final int btn_id = R.id.btn1;
     private Button btn_num;
     private EditText field;
+    private Button reset;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phone);
 
+        field = findViewById(R.id.phoneNumber);
+
+
         btn_num = findViewById(R.id.btn1);
 
-        field = findViewById(R.id.phoneNumber);
         btn_num.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,6 +31,13 @@ public class PhoneActivity extends AppCompatActivity {
             }
         });
 
+        reset = findViewById(R.id.deleteBtn);
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                field.setText("");
+            }
+        });
     }
 
 
